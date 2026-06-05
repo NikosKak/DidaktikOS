@@ -1,0 +1,21 @@
+2026-06-05 12:35:09 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-05 12:35:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 12:35:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-06-05 12:35:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-05 12:35:12 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-05 12:44:41 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-05 12:44:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 12:44:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-06-05 12:44:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-05 12:44:43 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-05 12:45:27 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-05 12:45:27 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 12:45:27 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-06-05 12:45:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-05 12:45:29 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-05 12:47:03 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-05 12:47:03 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 12:47:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-06-05 12:47:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-05 12:47:06 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-05 12:48:28 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'

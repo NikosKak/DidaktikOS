@@ -1,0 +1,153 @@
+2026-06-05 12:35:07 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-06-05 12:35:07 INFO  schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 514536 (C:\Users\nikos\Desktop\School-App-main\build\classes\java\main started by nikos in C:\Users\nikos\Desktop\School-App-main)
+ 2026-06-05 12:35:07 INFO  schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-06-05 12:35:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-06-05 12:35:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-06-05 12:35:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-06-05 12:35:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+ 2026-06-05 12:35:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-06-05 12:35:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1662 ms
+ 2026-06-05 12:35:10 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/hiber9dev?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-06-05 12:35:10 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `hiber9dev`.`flyway_schema_history` does not exist yet
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.016s)
+ 2026-06-05 12:35:10 INFO  org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+ 2026-06-05 12:35:10 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `hiber9dev`.`flyway_schema_history` ...
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `hiber9dev`: << Empty Schema >>
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `hiber9dev` to version "1 - initial schema"
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `hiber9dev` to version "2 - insert regions"
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `hiber9dev` to version "3 - alter teachers add soft delete columns"
+ 2026-06-05 12:35:10 WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `hiber9dev` to version "4 - teachers soft delete indexes"
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `hiber9dev` to version "5 - create users roles capabilities indexes"
+ 2026-06-05 12:35:10 WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `hiber9dev` to version "6 - insert roles capabilites"
+ 2026-06-05 12:35:10 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 6 migrations to schema `hiber9dev`, now at version v6 (execution time 00:00.285s)
+ 2026-06-05 12:35:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-06-05 12:35:11 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-06-05 12:35:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-06-05 12:35:11 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-06-05 12:35:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-06-05 12:35:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-06-05 12:35:12 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [C:\Users\nikos\Desktop\School-App-main\build\classes\java\main\schoolapp\controller\TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [C:\Users\nikos\Desktop\School-App-main\build\classes\java\main\schoolapp\service\TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); No property 'personalInfoAmka' found for type 'Teacher'
+ 2026-06-05 12:35:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-06-05 12:35:12 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherController' defined in file [C:\Users\nikos\Desktop\School-App-main\build\classes\java\main\schoolapp\controller\TeacherController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherService' defined in file [C:\Users\nikos\Desktop\School-App-main\build\classes\java\main\schoolapp\service\TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); No property 'personalInfoAmka' found for type 'Teacher'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherService' defined in file [C:\Users\nikos\Desktop\School-App-main\build\classes\java\main\schoolapp\service\TeacherService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherRepository' defined in schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); No property 'personalInfoAmka' found for type 'Teacher'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'teacherRepository' defined in schoolapp.repository.TeacherRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); No property 'personalInfoAmka' found for type 'Teacher'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); No property 'personalInfoAmka' found for type 'Teacher'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional schoolapp.repository.TeacherRepository.findByPersonalInfoAmka(java.lang.String); No property 'personalInfoAmka' found for type 'Teacher'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'personalInfoAmka' found for type 'Teacher'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+2026-06-05 12:44:39 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-06-05 12:44:39 INFO  schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 507492 (C:\Users\nikos\Desktop\School-App-main\build\classes\java\main started by nikos in C:\Users\nikos\Desktop\School-App-main)
+ 2026-06-05 12:44:39 INFO  schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-06-05 12:44:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-06-05 12:44:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-06-05 12:44:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-06-05 12:44:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+ 2026-06-05 12:44:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-06-05 12:44:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1785 ms
+ 2026-06-05 12:44:42 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/hiber9dev?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-06-05 12:44:42 INFO  o.f.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.025s)
+ 2026-06-05 12:44:42 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `hiber9dev`: 6
+ 2026-06-05 12:44:42 INFO  o.f.core.internal.command.DbMigrate - Schema `hiber9dev` is up to date. No migration necessary.
+ 2026-06-05 12:44:42 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-06-05 12:44:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-06-05 12:44:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-06-05 12:44:42 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-06-05 12:44:43 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Could not determine recommended JdbcType for Java type 'schoolapp.model.Teacher$PersonalInfo'
+ 2026-06-05 12:44:43 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Could not determine recommended JdbcType for Java type 'schoolapp.model.Teacher$PersonalInfo'
+ 2026-06-05 12:44:43 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Could not determine recommended JdbcType for Java type 'schoolapp.model.Teacher$PersonalInfo'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: org.hibernate.type.descriptor.java.spi.JdbcTypeRecommendationException: Could not determine recommended JdbcType for Java type 'schoolapp.model.Teacher$PersonalInfo'
+	at org.hibernate.type.descriptor.java.spi.UnknownBasicJavaType.getRecommendedJdbcType(UnknownBasicJavaType.java:50)
+2026-06-05 12:45:25 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-06-05 12:45:25 INFO  schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 507736 (C:\Users\nikos\Desktop\School-App-main\build\classes\java\main started by nikos in C:\Users\nikos\Desktop\School-App-main)
+ 2026-06-05 12:45:25 INFO  schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-06-05 12:45:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-06-05 12:45:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-06-05 12:45:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-06-05 12:45:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+ 2026-06-05 12:45:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-06-05 12:45:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1859 ms
+ 2026-06-05 12:45:28 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/hiber9dev?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-06-05 12:45:28 INFO  o.f.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.023s)
+ 2026-06-05 12:45:28 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `hiber9dev`: 6
+ 2026-06-05 12:45:28 INFO  o.f.core.internal.command.DbMigrate - Schema `hiber9dev` is up to date. No migration necessary.
+ 2026-06-05 12:45:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-06-05 12:45:28 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-06-05 12:45:28 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-06-05 12:45:28 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-06-05 12:45:29 INFO  o.h.m.internal.PojoInstantiatorImpl - HHH000182: No default (no-argument) constructor for class: schoolapp.model.Teacher$PersonalInfo (class must be instantiated by Interceptor)
+ 2026-06-05 12:45:29 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-06-05 12:45:29 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [amka] in table [teachers]
+ 2026-06-05 12:45:29 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [amka] in table [teachers]
+ 2026-06-05 12:45:29 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [amka] in table [teachers]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [amka] in table [teachers]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [amka] in table [teachers]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:149)
+2026-06-05 12:47:01 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-06-05 12:47:01 INFO  schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.10 with PID 148632 (C:\Users\nikos\Desktop\School-App-main\build\classes\java\main started by nikos in C:\Users\nikos\Desktop\School-App-main)
+ 2026-06-05 12:47:01 INFO  schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-06-05 12:47:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2026-06-05 12:47:01 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2026-06-05 12:47:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-06-05 12:47:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+ 2026-06-05 12:47:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-06-05 12:47:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1693 ms
+ 2026-06-05 12:47:03 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/hiber9dev?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-06-05 12:47:04 INFO  o.f.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.028s)
+ 2026-06-05 12:47:04 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `hiber9dev`: 6
+ 2026-06-05 12:47:04 INFO  o.f.core.internal.command.DbMigrate - Schema `hiber9dev` is up to date. No migration necessary.
+ 2026-06-05 12:47:04 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-06-05 12:47:04 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-06-05 12:47:04 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-06-05 12:47:04 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-06-05 12:47:05 INFO  o.h.m.internal.PojoInstantiatorImpl - HHH000182: No default (no-argument) constructor for class: schoolapp.model.Teacher$PersonalInfo (class must be instantiated by Interceptor)
+ 2026-06-05 12:47:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-06-05 12:47:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-06-05 12:47:05 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2026-06-05 12:47:05 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+ 2026-06-05 12:47:06 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2026-06-05 12:47:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-06-05 12:47:06 INFO  schoolapp.SchoolappApplication - Started SchoolappApplication in 5.53 seconds (process running for 5.878)
+ 2026-06-05 12:48:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-06-05 12:48:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 
