@@ -1,4 +1,4 @@
-# SchoolApp  SSR
+# DidaktikOS
 
 A server-side rendered (SSR) Spring Boot application for managing teachers and users, built with Thymeleaf views, Spring Data JPA, Spring Security, and Flyway for database migrations.
 
